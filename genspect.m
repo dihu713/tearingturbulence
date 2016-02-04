@@ -1,4 +1,4 @@
-itime = 150;
+itime = 145;
 ix = 502;
 
 [nx,ny,nz,time,x,y,z,bx]=rd3dhdf('bx',itime);
@@ -9,13 +9,13 @@ ix = 502;
 [nx,ny,nz,time,x,y,z,vy]=rd3dhdf('vy',itime);
 [nx,ny,nz,time,x,y,z,vz]=rd3dhdf('vz',itime);
 
-FFTBx;
-FFTBy;
-FFTD;
+FFTBx3D;
+FFTBy3D;
+FFTBz3D;
 
-FFTvx;
-FFTvy;
-FFTvz;
+FFTvx3D;
+FFTvy3D;
+FFTvz3D;
 
 transformation;
 intkper;

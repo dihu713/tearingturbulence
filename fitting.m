@@ -4,7 +4,7 @@ FitFun2 = zeros(nkper,1);
 iref = 10;
 Emk0 = Emkper(iref);
 
-epsilon = 0.0004;
+epsilon = 0.0005;
 
 for ik = 1 : nkper
    
@@ -21,7 +21,7 @@ for ik = 1 : nkper
 
     
     keta = (0.0003^(1/4))*((3*10^(-5))^(-3/4));
-    FitFun2(ik) = Emkper(iref)*((coordkper(ik)/coordkper(iref))^(-13/5))*10;
+    FitFun2(ik) = Emkper(iref)*((coordkper(ik)/coordkper(iref))^(-12/5))*10;
     
     
 end
